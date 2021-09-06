@@ -32,7 +32,7 @@ namespace ehinnersSleepData
                 
                 // random number generator
                 Random rnd = new Random();
-                
+
                 StreamWriter sw = new StreamWriter("data.txt");
 
                 // loop for the desired # of weeks
@@ -58,6 +58,17 @@ namespace ehinnersSleepData
             else if(resp=="2")
             {
                 StreamReader sr = new StreamReader("data.txt");
+                string[] fileLine;
+                string[] weekData;
+                string[] dateInfo;
+                int day;
+                int month;
+                int year;
+                int hours;
+                int total;
+                DateTime tempDate;
+
+                Console.WriteLine();
             }
                 
         }
