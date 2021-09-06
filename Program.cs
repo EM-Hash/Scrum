@@ -15,11 +15,15 @@ namespace ehinnersSleepData
 
             if (resp == "1")
             {
-                
+                // create file
+                StreamWriter sw = new StreamWriter("data.txt");
+
+                sw.Close();
+
             }
             else if(resp=="2")
             {
-
+                StreamReader sr = new StreamReader("data.txt");
             }
                 
         }
