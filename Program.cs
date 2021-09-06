@@ -69,6 +69,22 @@ namespace ehinnersSleepData
                 DateTime tempDate;
 
                 Console.WriteLine();
+
+                while(!sr.EndOfStream)
+                {
+                    Console.WriteLine();
+                    fileLine=sr.ReadLine().Split(",");                    
+                    string temp = fileLine[0];
+                    dateInfo = temp.Split("/");
+                    weekData=fileLine[1].Split("|");
+                    
+                    month = Int32.Parse(dateInfo[0]);
+                    day = Int32.Parse(dateInfo[1]);
+                    year = Int32.Parse(dateInfo[2]);
+
+                    tempDate = new DateTime(year, month, day);
+                    
+                }
             }
                 
         }
