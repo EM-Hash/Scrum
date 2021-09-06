@@ -83,6 +83,21 @@ namespace ehinnersSleepData
                     year = Int32.Parse(dateInfo[2]);
 
                     tempDate = new DateTime(year, month, day);
+
+                    Console.WriteLine("Week of {0:MMM, dd, yyyy}",tempDate);
+                    Console.WriteLine(" Mo Tu We Th Fr Sa Su Tot Avg");
+                    Console.WriteLine(" -- -- -- -- -- -- -- --- ---");
+                    total = 0;
+                    Console.Write(" ");
+                    foreach(string numHours in weekData)
+                    {
+                        hours = Int32.Parse(numHours);
+                        Console.Write($"{hours,2} ");
+                        total += hours;
+                    }
+                    Console.Write($"{total,3} ");
+                    Console.Write($"{(double)total/7,3:#.#} ");
+                    Console.WriteLine();
                     
                 }
             }
