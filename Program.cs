@@ -7,6 +7,7 @@ namespace ehinnersSleepData
     {
         static void Main(string[] args)
         {
+            //github
             // ask for input
             Console.WriteLine("Enter 1 to create data file.");
             Console.WriteLine("Enter 2 to parse data.");
